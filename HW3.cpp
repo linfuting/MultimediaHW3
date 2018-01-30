@@ -9,8 +9,11 @@ using namespace cv;
 int main()
 {
 	Mat i1 = imread("i1.pgm");
-	namedWindow("i1");
-	imshow("i1", i1);
+	Mat i2 = imread("i2.pgm");
+	namedWindow("reference");
+	namedWindow("target");
+	imshow("reference", i1);
+	imshow("target", i2);
 	waitKey(0);
     return 0;
 }
